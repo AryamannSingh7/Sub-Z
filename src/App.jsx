@@ -1,21 +1,23 @@
-import React from "react"
-import Navbar from "./components/Navbar"
-import Hero from "./components/Hero"
-import FeatureSection from "./components/FeatureSection"
-import About from "./components/About"
-import Footer from "./components/Footer"
+import React from "react";
+// import Navbar from "./components/Navbar";
+// import Footer from "./components/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Homepage from "./pages/homepage/Homepage";
+import Prediction from "./pages/prediction/Prediction";
+import Categories from "./pages/categories/Categories";
 
 function App() {
-
   return (
     <div>
-      <Navbar/>
-      <Hero/>
-      <FeatureSection/>
-      <About/>
-      <Footer/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/prediction" element={<Prediction />} />
+          <Route path="/categories" element={<Categories />} />
+        </Routes>
+      </BrowserRouter>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

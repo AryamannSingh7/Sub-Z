@@ -28,10 +28,10 @@ const Footer = () => {
             </div>
         </div>
         <div className='flex justify-start items-center gap-2 '>
-            <img src={github} alt="" className='w-[60px] h-[60px]' />
-            <img src={linkedin} alt="" className='w-[60px] h-[60px]'/>
-            <img src={insta} alt="" className='w-[50px] h-[50px]'/>
-            <img src={twitter} alt="" className='w-[60px] h-[60px]'/>
+            <a className='hover:cursor-pointer' href='https://github.com/AryamannSingh7/Sub-Z'><img src={github} alt="" className='w-[60px] h-[60px]' /></a>
+            <a className='hover:cursor-pointer' href='https://www.linkedin.com/in/aryamannsingh2002/'><img src={linkedin} alt="" className='w-[60px] h-[60px]'/></a>
+            <a className='hover:cursor-pointer' href='https://www.instagram.com/'><img src={insta} alt="" className='w-[50px] h-[50px]'/></a>
+            <a className='hover:cursor-pointer' href='https://twitter.com/AryamannSingh3'><img src={twitter} alt="" className='w-[60px] h-[60px]'/></a>
         </div>
         <div className='text-white text-xl flex flex-col justify-center items-center gap-3 mt-4 md:mt-0'>
             <h1>Get the latest updates: </h1>
