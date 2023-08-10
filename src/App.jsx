@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Homepage from "./pages/homepage/Homepage";
 import Prediction from "./pages/prediction/Prediction";
 import Categories from "./pages/categories/Categories";
+import Prices from "./pages/prices/Prices";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Homepage />} />
           <Route path="/prediction" element={<Prediction />} />
           <Route path="/categories" element={<Categories />} />
+          <Route path="/prices" element={<Prices />} />
         </Routes>
       </BrowserRouter>
     </div>

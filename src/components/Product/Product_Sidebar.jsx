@@ -1,15 +1,19 @@
-import React from 'react'
-import CategorySidebar from './CategorySidebar'
-import AllProduct from './AllProduct'
-import './Product_Sidebar.css'
+import React from "react";
+import CategorySidebar from "./CategorySidebar";
+import AllProduct from "./AllProduct";
+import "./Product_Sidebar.css";
+import ProHeader from "./ProHeader";
 
 const Product_Sidebar = () => {
   return (
-    <div className='product-sidebar'>
-        <CategorySidebar />
-        <AllProduct />
-    </div>
-  )
-}
+    <div className="product-sidebar">
+      <ProHeader />
+      <CategorySidebar />
+      <AllProduct />
 
-export default Product_Sidebar
+      {/* <ProFotter /> */}
+    </div>
+  );
+};
+
+export default Product_Sidebar;

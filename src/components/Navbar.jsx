@@ -33,7 +33,7 @@ const Navbar = () => {
             <a href="#">Home</a>
           </li>
           <li
-            className=" hover:text-yellow-200 hover:underline underline-offset-8 hover:decoration-4 ease-in-out duration-100 hover:scale-x-105"
+            className=" hover:text-yellow-200 hover:underline underline-offset-8 hover:decoration-4 ease-in-out duration-100 hover:scale-x-105 hover:cursor-pointer"
             onClick={() => {
               navigate("/categories");
             }}

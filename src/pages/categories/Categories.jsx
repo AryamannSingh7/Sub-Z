@@ -1,9 +1,12 @@
 import React from "react";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 const Categories = () => {
   return (
     <div>
-      <h1>categories section</h1>
+      <Navbar />
+      <Footer />
     </div>
   );
 };
