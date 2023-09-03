@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import videobg from "../assets/videobg.mp4";
+// import videobg from "../assets/videobg.mp4";
 import arrow from "../assets/Arrow.svg";
 import heroimg from "../assets/heroimg4.jpg";
 import heroimg2 from "../assets/heroimg2.jpg";
@@ -9,13 +9,13 @@ const Hero = () => {
   const navigate = useNavigate();
   return (
     <div className="w-full h-screen relative z-30">
-      <video
+      {/* <video
         className="w-full h-full object-cover z-[-100]"
         src={videobg}
         autoPlay
         loop
         muted
-      />
+      /> */}
       <div className="w-full h-full absolute bg-gray-900/30 top-0 left-0"></div>
       <div className="absolute top-0 w-full h-full flex flex-col-reverse md:flex-row">
         <div className=" top-0 w-full h-full flex flex-col justify-center text-center font-Quicksand font-semibold">
@@ -36,7 +36,7 @@ const Hero = () => {
             >
               View Prices <img src={arrow} className="w-6"></img>
             </button>
-            <button className="w-[300px] h-[60px] border-slate-100 border-2 rounded-[10px] font-Ubuntu bg-transparent text-white py-[12px] px-[14px] flex justify-center items-center uppercase font-semibold text-xl gap-1 hover:gap-3 hover:bg-gray-900 mt-5 md:mt-0 hover:scale-105 hover:ease-in-out duration-150 ">
+            <button className="w-[300px] h-[60px] border-slate-100 border-2 rounded-[10px] font-Ubuntu bg-transparent text-white py-[12px] px-[14px] flex justify-center items-center uppercase font-semibold text-xl gap-1 hover:gap-3 hover:bg-gray-900 mt-0 hover:scale-105 hover:ease-in-out duration-150 ">
               Predictions <img src={arrow} className="w-6"></img>
             </button>
           </div>
